@@ -63,7 +63,6 @@ class Api {
   }
 
   addMessage(chatID, data) {
-    console.log(data)
     return fetch(`${this._baseUrl}/messages/${chatID}`, {
       method: "POST",
       headers: {
@@ -76,7 +75,6 @@ class Api {
   }
 
   createChat(data) {
-    console.log(data)
     return fetch(`${this._baseUrl}/chats`, {
       method: "POST",
       headers: {

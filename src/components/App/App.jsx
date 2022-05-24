@@ -46,7 +46,6 @@ const App = () => {
     });
   }
   function handleLogin({ email, password }) {
-    console.log(email);
     api.authorization({ email, password }).then(() => setLoggedIn(true));
   }
   function handleLogout() {

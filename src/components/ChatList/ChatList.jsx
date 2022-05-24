@@ -5,7 +5,6 @@ import { CurrentUserContext } from "../../context/CurrentUserContext";
 
 const ChatList = ({ chats, onSelect, onLogout, selectedChat, onCreate }) => {
   const currentUser = useContext(CurrentUserContext);
-  console.log(chats);
 
   return (
     <section className="chats">
